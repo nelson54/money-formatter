@@ -1,9 +1,6 @@
 rgx = /^([A-z\$]{1,3})[\s]?((\d{1,3}(\,\d{3})*|(\d+))(\.\d{2}))?$/
 
-Money = (cur, val) ->
-
-  currency = cur
-  value = val
+Money = (currency, value) ->
 
   getCurrency = () ->
     currency
