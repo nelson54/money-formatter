@@ -44,10 +44,4 @@ Money.valueOf = (string) ->
   obj.init(currency, value)
   return obj
 
-
-
-Object.keys(currencies).forEach( (currency) ->
-    Money[currency] = currencies[currency]
-)
-
 module.exports = Money
