@@ -21,7 +21,7 @@ Money = (cur, val) ->
     if currency && value
       currency + ' ' + value
 
-  {
+  return {
     getCurrency,
     getValue,
     intValue,
@@ -34,9 +34,6 @@ Money.valueOf = (string) ->
   m = rgx.exec(string)
 
   if(m.length >= 3)
-    currency = m[1]
-    value = m[2]
-
-  return Money(currency, value)
+    return Money(m[1], m[2])
 
 module.exports = Money
