@@ -16,7 +16,7 @@ Money = (currency, value) ->
 
   toString = () ->
     if currency && value
-      currency + ' ' + value
+      "#{currency} #{value}"
 
   return {
     getCurrency,
