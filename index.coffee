@@ -30,7 +30,7 @@ Money = (currency, value) ->
 Money.valueOf = (string) ->
   m = rgx.exec(string)
 
-  if(m.length >= 3)
+  if m.length >= 3
     return Money(m[1], m[2])
 
 module.exports = Money

@@ -1,6 +1,6 @@
 Money = require('./Money')
 
-val = 'USD 1.99'
+val = '$1.99'
 
 money = Money.valueOf(val)
 
